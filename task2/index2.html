@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <title>table</title>
+    <style>
+        table {
+            width: 50%;
+        }
+        td {
+            border: 5px solid #a50ea841;
+            padding: 60px;
+            text-align: center;
+            align-items: center;
+            color: #306bfe;
+            font-weight: 700;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        td:hover{
+            background-color: #f9cbf5;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="table"></div>
+    <script>
+        function createTableCells(rowAmount, cellsAmount) {
+            var table = document.createElement("table");
+            var tbody = document.createElement("tbody");
+            var counter = 1;
+    
+            for (var i = 0; i < rowAmount; i++) {
+                var row = document.createElement("tr");
+    
+                for (var j = 0; j < cellsAmount; j++) {
+                    var cell = document.createElement("td");
+                    cell.innerText = counter;
+                    counter++;
+                    row.append(cell);
+                }
+    
+                tbody.append(row);
+            }
+    
+            table.append(tbody);
+            document.querySelector('#table').append(table);
+        }
+    
+        createTableCells(3, 5);
+    </script>
+    
+</body>
+</html>
+
