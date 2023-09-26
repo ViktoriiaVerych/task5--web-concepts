@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
+    <link rel="stylesheet" href="style3.css">
+    <title>Bookshelf</title>
+</head>
+<body>
+    <h1>my bookshelf:</h1>
+    <!-- <h1>total amount of books: </h1> -->
+    <div id="bookshelf"></div>
+    <form id="book-form">
+        <div class="forms">
+            <div class="input-form">
+                <div class="input-space">
+                    <input type="text" id="title" required placeholder="Title">
+                </div>
+            </div>
+            <div class="input-form">
+                <div class="input-space">
+                    <input type="text" id="authors" required placeholder="Authors">
+                </div>
+            </div>
+            <div class="input-form">
+                <div class="input-space">
+                    <input type="number" id="pages" required placeholder="Number of Pages">
+                </div>
+            </div>
+            <div class="check-boxes">
+                <div class="check-box">
+                    <input type="checkbox" id="isFavorite" class="custom-checkbox">
+                    <label for="isFavorite" class="custom-label">Toggle Favorite</label>
+                </div>
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" id="isRead" class="custom-checkbox">
+                    <label for="isRead" class="custom-label">Toggle isRead</label>
+                </div>
+            </div>
+            
+            <button type="submit" class="button">Add Book</button>
+        </div>
+        
+    </form>
+    <script src="script3.js"></script>
+</body>
+</html>
